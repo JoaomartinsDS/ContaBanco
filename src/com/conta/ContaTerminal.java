@@ -1,16 +1,14 @@
 package com.conta;
-import java.util.Locale;
 import java.util.Scanner;
 public class ContaTerminal {
     int numeroConta;
     String agencia;
     String nomeCliente;
     double saldo;
-    Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+    Scanner scanner = new Scanner(System.in);
     public void main(String[] args) {
         System.out.println("Bem vindo(a) ao nosso banco.\nQual o seu nome?");
-        nomeCliente = scanner.next();
-        agencia = scanner.next();
+        nomeCliente = scanner.nextLine();
         System.out.println("Digite o número da sua conta: ");
         numeroConta = scanner.nextInt();
         System.out.println("Digite a sua agência: ");
